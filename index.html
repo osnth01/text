@@ -22,33 +22,15 @@
         width: 100%;
         margin: 0px;
       }
-      
-      button {
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        cursor: pointer;
-        background: #9f72e6;
-        border: 0;
-        border-radius: 2px;
-        padding: 5px 10px;
-        text-align: center;
-        color: #fff;
-      }
     </style>
   </head>
   <body>
     <textarea id="text" onkeyup="textAreaAdjust(this)"></textarea>
-    <button onclick="scrollToBottom();">&darr;</button>
   </body>
   <script>
     function textAreaAdjust(o) {
       o.style.height = "1px";
       o.style.height = (22+o.scrollHeight)+"px";
-    }
-    
-    function scrollToBottom() {
-      window.scrollTo(0,document.body.scrollHeight);
     }
   </script>
 </html>
